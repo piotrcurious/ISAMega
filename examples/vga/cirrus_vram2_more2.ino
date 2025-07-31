@@ -548,7 +548,7 @@ void printCirrusInfo() {
  * @brief Enhanced setup function with Cirrus Logic support
  * Add this to replace your existing setup() function
  */
-void setupWithCirrus() {
+void setup() {
     Serial.begin(1000000);
     
     // Standard hardware initialization (same as before)
@@ -800,7 +800,7 @@ void demonstrateCirrusFeatures() {
  * @brief Enhanced loop function with Cirrus Logic commands
  * Add this to replace your existing loop() function or integrate the new commands
  */
-void loopWithCirrus() {
+void loop() {
     if (Serial.available()) {
         command = Serial.read();
         
